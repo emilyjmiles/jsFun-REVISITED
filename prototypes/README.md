@@ -13,7 +13,9 @@ In order to be successful when working with prototype methods, you'll need to ha
 
 # Instructions
 
-In the [prototypes/index.js](https://github.com/turingschool-examples/jsFun/prototypes/index.js) file, you'll see several objects named after a collection of prompts that need to be solved. Each prompt is represented by a separate method on that object. 
+**Instructions need to be updated for use after reformating.**
+
+`In the [prototypes/index.js](https://github.com/turingschool-examples/jsFun/prototypes/index.js) file, you'll see several objects named after a collection of prompts that need to be solved. Each prompt is represented by a separate method on that object. 
 
 For example, the first object of prompts is called `kittyPrompts` and coincides with the dataset at `prototypes/datasets/kitties.js`. As you work through the methods on this object, it will help to switch your text editor layout to display 2 files at once - one for the dataset you're working with, and one for the prompts to be solved.
 
@@ -82,7 +84,7 @@ const farmPrompts = {
   }
 }
 ```
-You will then check that your solution is correct by running the corresponding test in `test/prototype-test.js`.
+You will then check that your solution is correct by running the corresponding test in `test/prototype-test.js`.`
 
 ## Prototype Test Checklist
 If you'd like to keep track of your progress, feel free to use the checklist below. Change the `[ ]` to `[x]` in order to check off each item.
