@@ -1,12 +1,12 @@
 const chai = require("chai");
 const expect = chai.expect;
-const scope = require("../scope/index");
+const scope = require("../codeFile/index");
 
-chai.use(function(e, t) {
-  e.Assertion.addMethod("withMessage", function(e) {
-    t.flag(this, "message", e)
-  })
-})
+chai.use(function (e, t) {
+  e.Assertion.addMethod("withMessage", function (e) {
+    t.flag(this, "message", e);
+  });
+});
 
 describe("SCOPE", () => {
   it.skip("exerciseA", () => {
@@ -20,7 +20,7 @@ describe("SCOPE", () => {
       D: "Paul"
     }]);
 
-    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true
+    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true;
   });
 
   it.skip("exerciseB", () => {
@@ -34,7 +34,7 @@ describe("SCOPE", () => {
       D: 30
     }]);
 
-    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true
+    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true;
   });
 
   it.skip("exerciseC", () => {
@@ -48,7 +48,7 @@ describe("SCOPE", () => {
       D: "Hello"
     }]);
 
-    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true
+    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true;
   });
 
   it.skip("exerciseD", () => {
@@ -62,7 +62,7 @@ describe("SCOPE", () => {
       D: "howdy"
     }]);
 
-    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true
+    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true;
   });
 
   it.skip("exerciseE", () => {
@@ -76,7 +76,7 @@ describe("SCOPE", () => {
       D: "Brittany"
     }]);
 
-    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true
+    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true;
   });
 
   it.skip("exerciseF", () => {
@@ -92,7 +92,7 @@ describe("SCOPE", () => {
       E: "Biscuit"
     }]);
 
-    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true
+    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true;
   });
 
   it.skip("exerciseG", () => {
@@ -106,7 +106,7 @@ describe("SCOPE", () => {
       D: "apple"
     }]);
 
-    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true
+    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true;
   });
 
   it.skip("exerciseH", () => {
@@ -122,7 +122,7 @@ describe("SCOPE", () => {
       C: 4
     }]);
 
-    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true
+    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true;
   });
 
   it.skip("exerciseI", () => {
@@ -144,7 +144,7 @@ describe("SCOPE", () => {
       E: 55
     }]);
 
-    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true
+    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true;
   });
 
   it.skip("exerciseJ", () => {
@@ -162,7 +162,7 @@ describe("SCOPE", () => {
       F: "National Treasure"
     }]);
 
-    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true
+    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true;
   });
 
   it.skip("exerciseK", () => {
@@ -172,7 +172,7 @@ describe("SCOPE", () => {
       B: 7
     }]);
 
-    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true
+    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true;
   });
 
   it.skip("exerciseL", () => {
@@ -184,7 +184,7 @@ describe("SCOPE", () => {
       C: 90
     }]);
 
-    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true
+    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true;
   });
 
   it.skip("exerciseM", () => {
@@ -198,7 +198,7 @@ describe("SCOPE", () => {
       D: 6
     }]);
 
-    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true
+    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true;
   });
 
   it.skip("exerciseN", () => {
@@ -216,7 +216,7 @@ describe("SCOPE", () => {
       F: "Louisa"
     }]);
 
-    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true
+    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true;
   });
 
   it.skip("exerciseO", () => {
@@ -228,7 +228,7 @@ describe("SCOPE", () => {
       C: "flipflop"
     }]);
 
-    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true
+    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true;
   });
 
   it.skip("exerciseP", () => {
@@ -238,7 +238,7 @@ describe("SCOPE", () => {
       C: "soup"
     }]);
 
-    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true
+    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true;
   });
 
   it.skip("exerciseQ", () => {
@@ -254,7 +254,7 @@ describe("SCOPE", () => {
       E: "Pandora"
     }]);
 
-    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true
+    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true;
   });
 
   it.skip("exerciseR", () => {
@@ -268,6 +268,6 @@ describe("SCOPE", () => {
       D: "RodyToyDaniels"
     }]);
 
-    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true
-  })
-})
+    expect(e).withMessage("Your order of execution and/or values for variables in your result object are incorrect").to.be.true;
+  });
+});

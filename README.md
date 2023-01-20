@@ -14,9 +14,13 @@ To run all tests for both protoype methods and scope:
 
 `npm test`
 
-To run the tests for just a *single* concept:
+To run ALL tests for just _single_ concept:
 
-`npm run testScope` or  `npm run testPrototypes`
+`npm run testScope` or `npm run testPrototypes`
+
+To run test for just one problem set in prototypes:
+
+`npm test prototypes/test/${file name}.js`
 
 ## Pulling Down Repo Changes
 
@@ -41,4 +45,3 @@ Now, whenever instructors tell you to pull down changes, there are two steps:
 2. Run `git pull turing main`
 
 Check out [this video](https://vimeo.com/turing/review/388550182/34823726eb) if you need help pulling down new changes!
-

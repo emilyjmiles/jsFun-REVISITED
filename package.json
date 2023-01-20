@@ -4,9 +4,9 @@
   "description": "Practice problems for JavaScript Fundamentals",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha test/ --reporter dot --require mocha-clean",
-    "testPrototypes": "./node_modules/mocha/bin/mocha test/prototype-test.js --reporter dot --require mocha-clean",
-    "testScope": "./node_modules/mocha/bin/mocha test/scope-test.js --reporter dot --require mocha-clean"
+    "test": "mocha --require mocha-clean",
+    "testPrototypes": "./node_modules/mocha/bin/mocha --recursive prototypes/test/*-test.js --require mocha-clean",
+    "testScope": "./node_modules/mocha/bin/mocha --recursive scope/test/scope-test.js --require mocha-clean"
   },
   "keywords": [
     "js"
