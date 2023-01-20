@@ -59,13 +59,13 @@ describe("Kitty Prompts", () => {
 });
 
 describe('Kitty Prompts Dynamic Refactor', () => {
-  it.skip('should return a list of the names of orange puppers or kitties', () => {
+  it.skip('should return a list of the names of orange puppers OR kitties, depending on data given', () => {
     const e = kittyPrompts.orangePetNames(puppers);
 
     expect(e).to.deep.equal(["Hatchet", "Butter"]);
   });
 
-  it.skip('should sort puppers or kitties from oldest to youngest', () => {
+  it.skip('should sort puppers OR kitties from oldest to youngest, depending on data given', () => {
     const e = kittyPrompts.sortByAge(puppers);
 
     expect(e).to.deep.equal([{
@@ -87,7 +87,7 @@ describe('Kitty Prompts Dynamic Refactor', () => {
     }]);
   });
 
-  it.skip('should increase the age of puppers or kitties by 2 years', () => {
+  it.skip('should increase the age of puppers OR kitties by 2 years, depending on data given', () => {
     const e = kittyPrompts.growUp(puppers);
 
     expect(e).to.deep.equal([{

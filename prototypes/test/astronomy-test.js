@@ -38,7 +38,7 @@ describe("Astronomy Prompts", () => {
     ]);
   });
 
-  it.skip("should return an object with unique star colors as keys and a list of stars that match that color as values", () => {
+  it.skip("should return an list of unique star colors and the details for each star that matches that color", () => {
     const e = astronomyPrompts.starsByColor();
 
     expect(e).to.deep.equal({

@@ -5,7 +5,7 @@ const { mods } = require('../datasets/mods');
 const modPrompts = require('../codeFiles/mods-code');
 
 describe("Mod Prompts", () => {
-  it.skip("studentsPerMod", () => {
+  it.skip("should return a list of modules and number of student per instructor for that module", () => {
     const e = modPrompts.studentsPerMod();
 
     expect(e).to.deep.equal([{

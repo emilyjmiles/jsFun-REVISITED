@@ -1,22 +1,23 @@
-// const { kitties } = require('../datasets/kitties');
-// const { puppers } = require('../datasets/puppers');
+const { kitties } = require('../datasets/kitties');
+const { puppers } = require('../datasets/puppers');
 
 const kittyPrompts = {
-  // Return an array of just the names of kitties who are orange e.g.
-  // ['Tiger', 'Snickers']
+  // Return an array of just the names of kitties who are orange.
+  // ex: ['Tiger', 'Snickers']
   orangePetNames() {
 
   },
 
-  // Sort the kitties by their age
+  // Sort the kitties by their age.
   sortByAge() {
 
   },
 
-  // Return an array of kitties who have all grown up by 2 years e.g.
-  // [
+  // Return an array of kitties who have all grown up by 2 years.
+  // ex: [
   //  { name: 'Felicia', age: 4, color: 'grey' },
-  //  { name: 'Tiger', age: 7, color: 'orange' }, ...etc
+  //  { name: 'Tiger', age: 7, color: 'orange' }, 
+  //  ...etc
   // ]
   growUp() {
 

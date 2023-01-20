@@ -5,7 +5,7 @@ const { turing } = require('../datasets/turing');
 const turingPrompts = require('../codeFiles/turing-code');
 
 describe("Turing Prompts", () => {
-  it.skip("studentsForEachInstructor", () => {
+  it.skip("should return a list of instructors with the number of students in their module", () => {
     const e = turingPrompts.studentsForEachInstructor();
 
     expect(e).to.deep.equal([{
@@ -38,7 +38,7 @@ describe("Turing Prompts", () => {
     }]);
   });
 
-  it.skip("studentsPerInstructor", () => {
+  it.skip("should return a list of cohorts with the number of students in that cohort", () => {
     const e = turingPrompts.studentsPerInstructor();
 
     expect(e).to.deep.equal({
@@ -49,7 +49,7 @@ describe("Turing Prompts", () => {
     });
   });
 
-  it.skip("modulesPerTeacher", () => {
+  it.skip("should return a list of instructors with the modules they can teach based on curriculum", () => {
     const e = turingPrompts.modulesPerTeacher();
 
     expect(e).to.deep.equal({
@@ -65,7 +65,7 @@ describe("Turing Prompts", () => {
     });
   });
 
-  it.skip("curriculumPerTeacher", () => {
+  it.skip("should return a list of unique curriculum topics with instructors who teach that topic", () => {
     const e = turingPrompts.curriculumPerTeacher();
 
     expect(e).to.deep.equal({

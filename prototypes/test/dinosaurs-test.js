@@ -5,7 +5,7 @@ const { dinosaurs } = require('../datasets/dinosaurs');
 const dinosaurPrompts = require('../codeFiles/dinosaurs-code');
 
 describe("Dinosaur Prompts", () => {
-  it.skip("should return a list of movie titles as keys and the number of awesome dinosaurs in that movie as values", () => {
+  it.skip("should return a list of movie titles and the number of awesome dinosaurs in that movie", () => {
     const e = dinosaurPrompts.countAwesomeDinosaurs();
 
     expect(e).to.deep.equal({
@@ -17,7 +17,7 @@ describe("Dinosaur Prompts", () => {
     });
   });
 
-  it.skip("should return a list with the movie director as keys with a list as values with movie titles as keys and average actors age as values", () => {
+  it.skip("should return a list of movie directors and their movies with average age of actors in that movie", () => {
     const e = dinosaurPrompts.averageAgePerMovie();
 
     expect(e).to.deep.equal({
@@ -37,7 +37,7 @@ describe("Dinosaur Prompts", () => {
     });
   });
 
-  it.skip("uncastActors", () => {
+  it.skip("should return a list, sorted by nationality, of humans not cast in a Jurassic Park movie, with their nationality and imdbStarMeterRating", () => {
     const e = dinosaurPrompts.uncastActors();
 
     expect(e).to.deep.equal([{
@@ -61,7 +61,7 @@ describe("Dinosaur Prompts", () => {
     }]);
   });
 
-  it.skip("actorsAgesInMovies", () => {
+  it.skip("should return an list of humans that were in at least one movie and the age(s) they were in each movie(s) as a list", () => {
     const e = dinosaurPrompts.actorsAgesInMovies();
 
     expect(e).to.deep.equal([{

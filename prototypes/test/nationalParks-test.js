@@ -5,7 +5,7 @@ const { nationalParks } = require('../datasets/nationalParks');
 const nationalParksPrompts = require('../codeFiles/nationalParks-code');
 
 describe("National Park Prompts", () => {
-  it.skip("getParkVisitList", () => {
+  it.skip("should return a list of parks to visit and a list of parks already visted", () => {
     const e = nationalParksPrompts.getParkVisitList();
 
     expect(e).to.deep.equal({
@@ -13,7 +13,23 @@ describe("National Park Prompts", () => {
       parksVisited: ['Rocky Mountain', 'Acadia', 'Zion']
     });
   }),
-    it.skip("getParkActivities", () => {
+
+    it.skip("should return a list of states and the National Park for that state", () => {
+      const e = nationalParksPrompts.getParkInEachState();
+
+      expect(e).to.deep.equal(
+        [
+          { Colorado: 'Rocky Mountain' },
+          { Wyoming: 'Yellowstone' },
+          { Montana: 'Glacier' },
+          { Maine: 'Acadia' },
+          { Utah: 'Zion' },
+          { Florida: 'Everglades' }
+        ]
+      );
+    }),
+
+    it.skip("should return a list of all unique activities people can do in a National Park", () => {
       const e = nationalParksPrompts.getParkActivities();
 
       expect(e).to.deep.equal(
@@ -29,19 +45,7 @@ describe("National Park Prompts", () => {
           'canyoneering',
           'backpacking',
           'rock climbing'
-        ]);
-    }),
-    it.skip("getParkInEachState", () => {
-      const e = nationalParksPrompts.getParkInEachState();
-
-      expect(e).to.deep.equal(
-        [
-          { Colorado: 'Rocky Mountain' },
-          { Wyoming: 'Yellowstone' },
-          { Montana: 'Glacier' },
-          { Maine: 'Acadia' },
-          { Utah: 'Zion' },
-          { Florida: 'Everglades' }
-        ]);
+        ]
+      );
     });
 });

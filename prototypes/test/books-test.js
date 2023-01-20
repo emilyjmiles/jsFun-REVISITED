@@ -5,7 +5,7 @@ const { books } = require('../datasets/books');
 const bookPrompts = require('../codeFiles/books-code');
 
 describe("Book prompts", () => {
-  it.skip("should return a list of all book titles that are not horror or true crime ", () => {
+  it.skip("should return a list of all book titles that are NOT in the horror or true crime genres ", () => {
     const e = bookPrompts.removeViolence(books);
 
     expect(e).to.deep.equal(['1984',
@@ -21,7 +21,8 @@ describe("Book prompts", () => {
       'The Curious Incident of the Dog in the Night-Time',
       'The Bell Jar',
       'Catch-22',
-      'Treasure Island']);
+      'Treasure Island']
+    );
   });
 
   it.skip("should return a list of all books that were published in the 90's and 00's", () => {
@@ -36,7 +37,7 @@ describe("Book prompts", () => {
     }]);
   });
 
-  it.skip("should return an list of all books that were published after a specified year", () => {
+  it.skip("should return a list of all books that were published after a given year", () => {
     const e = bookPrompts.getBooksByYear(books, 1990);
 
     expect(e).to.deep.equal([{

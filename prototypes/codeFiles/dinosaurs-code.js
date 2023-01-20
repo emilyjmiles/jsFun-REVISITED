@@ -1,9 +1,8 @@
 const { dinosaurs } = require('../datasets/dinosaurs');
 
 const dinosaurPrompts = {
-  // Return an object where each key is a movie title and each value is the
-  // number of awesome dinosaurs in that movie. e.g.:
-  // {
+  // Return an object where each key is a movie title and each value is the number of awesome dinosaurs in that movie.
+  // ex: {
   //   'Jurassic Park': 5,
   //   'The Lost World: Jurassic Park': 8,
   //   'Jurassic Park III': 9,
@@ -14,11 +13,8 @@ const dinosaurPrompts = {
 
   },
 
-  // Return an object where each key is a movie director's name and each value is
-  //     an object whose key is a movie's title and whose value is the average age
-  //     of the cast on the release year of that movie.
-  //   e.g.:
-  //   {
+  // Return an object where each key is a movie director's name and each value is an object whose key is a movie's title and whose value is the average age of the cast on the release year of that movie.
+  // ex: {
   //     'Steven Spielberg':
   //       {
   //         'Jurassic Park': 34,
@@ -43,9 +39,7 @@ const dinosaurPrompts = {
   },
 
   // Return an array of objects that contain the names of humans who have not been cast in a Jurassic Park movie (yet), their nationality, and their imdbStarMeterRating. The object in the array should be sorted alphabetically by nationality.
-
-  // e.g.
-  //   [{
+  // ex: [{
   //     name: 'Justin Duncan',
   //     nationality: 'Alien',
   //     imdbStarMeterRating: 0
@@ -70,9 +64,7 @@ const dinosaurPrompts = {
   },
 
   // Return an array of objects for each human and the age(s) they were in the movie(s) they were cast in, as an array of age(s). Only include humans who were cast in at least one movie.
-
-  // e.g.
-  // [ { name: 'Sam Neill', ages: [ 46, 54 ] },
+  // ex: [ { name: 'Sam Neill', ages: [ 46, 54 ] },
   //   { name: 'Laura Dern', ages: [ 26, 34 ] },
   //   { name: 'Jeff Goldblum', ages: [ 41, 45, 63, 66 ] },
   //   { name: 'Richard Attenborough', ages: [ 70, 74, 92, 95 ] },
@@ -81,7 +73,6 @@ const dinosaurPrompts = {
   //   { name: 'BD Wong', ages: [ 33, 55, 58 ] },
   //   { name: 'Chris Pratt', ages: [ 36, 39 ] },
   //   { name: 'Bryce Dallas Howard', ages: [ 34, 37 ] } ]
-
   actorsAgesInMovies() {
 
   }

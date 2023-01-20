@@ -11,7 +11,7 @@ describe("Brewery Prompts", () => {
     expect(e).to.deep.equal(40);
   });
 
-  it.skip("should return a list of all breweries with the name and beer count", () => {
+  it.skip("should return a list of all breweries and their beer count", () => {
     const e = breweryPrompts.getBreweryBeerCount();
 
     expect(e).to.deep.equal([{

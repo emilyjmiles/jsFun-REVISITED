@@ -5,13 +5,13 @@ const { ultima } = require('../datasets/ultima');
 const ultimaPrompts = require('../codeFiles/ultima-code');
 
 describe("Ultima Prompts", () => {
-  it.skip("totalDamage", () => {
+  it.skip("should return the total damage that all characters can inflict with the weapons they possess", () => {
     const e = ultimaPrompts.totalDamage();
 
     expect(e).to.deep.equal(113);
   });
 
-  it.skip("charactersByTotal", () => {
+  it.skip("should return a list of characters with their total damage and total range for the weapons they possess ", () => {
     const e = ultimaPrompts.charactersByTotal();
 
     expect(e).to.deep.equal([{

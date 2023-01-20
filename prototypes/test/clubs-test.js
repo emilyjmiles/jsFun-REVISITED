@@ -5,7 +5,7 @@ const { clubs } = require('../datasets/clubs');
 const clubPrompts = require('../codeFiles/clubs-code');
 
 describe("Club Prompts", () => {
-  it.skip("Should return a list of people that are in a clubs and a list of all clubs that person is a part of", () => {
+  it.skip("should return a list of people that are in a clubs with a list of all clubs that person is a part of", () => {
     const e = clubPrompts.membersBelongingToClubs(clubs);
 
     expect(e).to.deep.equal({

@@ -71,7 +71,7 @@ describe("Cake Prompts", () => {
     expect(e).to.deep.equal(["dutch process cocoa", "toasted sugar", "smoked sea salt", "berries", "edible flowers", "mint", "cranberry", "crystallized ginger"]);
   });
 
-  it.skip("should return a list with unique toppings as keys and values of the quantity needed for all cake flavors", () => {
+  it.skip("should return a list with unique toppings and the quantity needed for all cake flavors", () => {
     const e = cakePrompts.groceryList();
 
     expect(e).to.deep.equal({

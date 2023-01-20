@@ -1,8 +1,8 @@
 const { classrooms } = require('../datasets/classrooms');
 
 const classPrompts = {
-  // Create an array of just the front-end classrooms. e.g.
-  // [
+  // Create an array of just the front-end classrooms.
+  // ex: [
   //   { roomLetter: 'A', program: 'FE', capacity: 32 },
   //   { roomLetter: 'C', program: 'FE', capacity: 27 },
   //   { roomLetter: 'E', program: 'FE', capacity: 22 },
@@ -12,9 +12,8 @@ const classPrompts = {
 
   },
 
-  // Create an object where the keys are 'feCapacity' and 'beCapacity',
-  // and the values are the total capacity for all classrooms in each program e.g.
-  // {
+  // Create an object where the keys are 'feCapacity' and 'beCapacity', and the values are the total capacity for all classrooms in each program.
+  // ex: {
   //   feCapacity: 110,
   //   beCapacity: 96
   // }
@@ -22,7 +21,7 @@ const classPrompts = {
 
   },
 
-  // Return the array of classrooms sorted by their capacity (least capacity to greatest)
+  // Return the array of classrooms sorted by their capacity (least capacity to greatest).
   sortByCapacity() {
 
   }
