@@ -13,7 +13,7 @@ In order to be successful with scope, you'll need to have a solid understanding 
 
 # Instructions
 
-In the [scope/index.js](https://github.com/turingschool-examples/jsFun/scope/index.js) file, you'll see an object called `scope` that has a number of methods on it. Each method represents a scope exercise you should solve. The exercises will look something like the following:
+In the scope directory, you'll see to sub-directories named codeFile and test. The codeFile/index.js is your implementation file and the test/scope-test.js is your testing suite. Each method within the codeFile/index.js represents a scope exercise you should solve. The exercises will look something like the following:
 
 ```js
 let text = 'Hello World!';
